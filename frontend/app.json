@@ -6,7 +6,9 @@
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
     "scheme": "poliprint",
-    "backgroundColor": "#000B2E",
+    "backgroundColor": "#000B2E","splash": {
+      "backgroundColor": "#00082E"
+    },
     "assetBundlePatterns": ["**/*"],
     "android": {
       "package": "com.poliprint.app"
