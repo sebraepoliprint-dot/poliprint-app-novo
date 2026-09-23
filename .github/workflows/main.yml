@@ -31,7 +31,8 @@ jobs:
 
       - name: 🚀 Compilar APK
         working-directory: ./frontend/android
-        run: bash ./gradlew assembleRelease
+        run: NODE_OPTIONS="--max-old-space-size=4096" bash ./gradlew clean assembleRelease
+
 
       - name: 💾 Guardar APK
         uses: actions/upload-artifact@v4
