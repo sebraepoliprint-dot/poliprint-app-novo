@@ -22,17 +22,19 @@ jobs:
           java-version: '17'
 
       - name: 📦 Instalar pacotes
+        working-directory: ./frontend
         run: npm install --legacy-peer-deps
 
       - name: 🏗️ Preparar Android (Expo)
+        working-directory: ./frontend
         run: npx expo prebuild --platform android
 
       - name: 🚀 Compilar APK
-        working-directory: android
+        working-directory: ./frontend/android
         run: bash ./gradlew assembleRelease
 
       - name: 💾 Guardar APK
         uses: actions/upload-artifact@v4
         with:
           name: Meu-Aplicativo-APK
-          path: android/app/build/outputs/apk/**/*.apk
+          path: frontend/android/app/build/outputs/apk/**/*.apk
