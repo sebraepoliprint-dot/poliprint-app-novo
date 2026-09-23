@@ -1,0 +1,136 @@
+{
+  "project_name": "PoliPrint - Field Service Management App PRO",
+  "theme": "Dark Deep Navy & Neon Cyan High-Performance UI",
+  "file_type_convention": "JavaScript (.js and .jsx files)",
+  "brand_identity": {
+    "name": "PoliPrint",
+    "logo_style": "Italicized bold logotype in glowing Cyan with Navy backdrop",
+    "tagline": "Gestão Inteligente de Serviços e Suprimentos de Impressão",
+    "core_aesthetic": "High-Contrast Precision Tech / Field Command Center"
+  },
+  "colors": {
+    "background_primary": "#000B2E",
+    "background_secondary": "#0A0E27",
+    "surface_card": "#11183C",
+    "surface_card_elevated": "#18224B",
+    "surface_card_hover": "#1E295E",
+    "accent_cyan": "#12BAFF",
+    "accent_cyan_bright": "#00D4FF",
+    "accent_blue": "#2563EB",
+    "border_subtle": "rgba(255, 255, 255, 0.08)",
+    "border_active": "rgba(18, 186, 255, 0.4)",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#94A3B8",
+    "text_muted": "#64748B",
+    "role_colors": {
+      "cliente": {
+        "primary": "#12BAFF",
+        "bg_glow": "rgba(18, 186, 255, 0.12)",
+        "badge": "bg-cyan-950/60 text-cyan-400 border border-cyan-500/30"
+      },
+      "tecnico": {
+        "primary": "#F59E0B",
+        "bg_glow": "rgba(245, 158, 11, 0.12)",
+        "badge": "bg-amber-950/60 text-amber-400 border border-amber-500/30"
+      },
+      "estoque": {
+        "primary": "#818CF8",
+        "bg_glow": "rgba(129, 140, 248, 0.12)",
+        "badge": "bg-indigo-950/60 text-indigo-400 border border-indigo-500/30"
+      },
+      "god": {
+        "primary": "#EC4899",
+        "bg_glow": "rgba(236, 72, 153, 0.12)",
+        "badge": "bg-pink-950/60 text-pink-400 border border-pink-500/30"
+      }
+    },
+    "status_colors": {
+      "pending": "#F59E0B",
+      "in_progress": "#3B82F6",
+      "completed": "#10B981",
+      "urgent": "#EF4444"
+    },
+    "gradients": {
+      "hero_card": "bg-gradient-to-br from-[#11183C] via-[#0A0E27] to-[#000B2E]",
+      "glow_accent": "bg-gradient-to-r from-[#12BAFF] to-[#00D4FF]",
+      "action_button": "bg-gradient-to-r from-[#00D4FF] via-[#12BAFF] to-[#2563EB]"
+    }
+  },
+  "typography": {
+    "heading_font": "Outfit, system-ui, sans-serif",
+    "body_font": "Plus Jakarta Sans, system-ui, sans-serif",
+    "mono_font": "JetBrains Mono, monospace",
+    "scale": {
+      "h1": "text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white",
+      "h2": "text-2xl sm:text-3xl font-bold tracking-tight text-white",
+      "h3": "text-xl sm:text-2xl font-semibold text-white",
+      "h4": "text-lg font-semibold text-white",
+      "body": "text-base font-normal text-slate-300 leading-relaxed",
+      "small": "text-sm text-slate-400",
+      "code": "font-mono text-xs text-cyan-400 tracking-wider"
+    }
+  },
+  "layout_and_spacing": {
+    "container_padding": "p-4 sm:p-6 lg:p-8",
+    "card_padding": "p-5 sm:p-6",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6",
+    "border_radius": "rounded-2xl",
+    "overlay_backdrop": "backdrop-blur-xl bg-[#000B2E]/80"
+  },
+  "components_design_specs": {
+    "header_nav": {
+      "style": "sticky top-0 z-50 backdrop-blur-md bg-[#000B2E]/90 border-b border-white/10 px-4 py-3 shadow-2xl",
+      "logo": "font-extrabold italic text-2xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500"
+    },
+    "metric_cards": {
+      "style": "relative overflow-hidden rounded-2xl bg-[#11183C] border border-white/10 p-5 shadow-xl hover:border-cyan-500/40 transition-all duration-300 group",
+      "glow_effect": "absolute -right-10 -bottom-10 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl group-hover:bg-cyan-500/20 transition-all"
+    },
+    "timeline_queue": {
+      "style": "space-y-4 relative before:absolute before:inset-0 before:left-4 before:w-0.5 before:bg-slate-800",
+      "item": "relative pl-10 bg-[#11183C] border border-white/5 rounded-xl p-4 shadow-md hover:border-cyan-500/30 transition-all"
+    },
+    "buttons": {
+      "primary": "w-full sm:w-auto px-6 py-3.5 rounded-xl font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 shadow-lg shadow-cyan-500/25 active:scale-[0.98] transition-all flex items-center justify-center gap-2",
+      "whatsapp": "w-full sm:w-auto px-6 py-3.5 rounded-xl font-semibold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-600/30 active:scale-[0.98] transition-all flex items-center justify-center gap-2",
+      "secondary": "w-full sm:w-auto px-6 py-3.5 rounded-xl font-semibold text-slate-200 bg-slate-800/80 hover:bg-slate-700 border border-white/10 active:scale-[0.98] transition-all"
+    },
+    "status_badges": {
+      "pending": "px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20",
+      "in_progress": "px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20",
+      "completed": "px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20",
+      "urgent": "px-3 py-1 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/20 animate-pulse"
+    },
+    "dropdown_and_modals": {
+      "rule": "NEVER use transparent backgrounds for dropdowns or modals. Always use solid high-density dark surfaces (#11183C or #18224B) with clear white borders (border-white/15) and full opacity shadow-2xl.",
+      "dialog_content": "bg-[#11183C] border border-cyan-500/30 rounded-2xl shadow-2xl text-white p-6 backdrop-blur-none opacity-100"
+    }
+  },
+  "whatsapp_automation": {
+    "deep_link_format": "https://wa.me/{phone_number}?text={encoded_message}",
+    "templates": {
+      "ticket_created": "Olá! Seu chamado #{ticket_id} para o equipamento {printer_model} foi aberto com sucesso na PoliPrint. Nosso técnico entrará em contato em breve.",
+      "ticket_assigned": "Técnico {tech_name} a caminho! Chamado #{ticket_id}. Acompanhe em tempo real pelo PoliPrint App.",
+      "ticket_finished": "Chamado #{ticket_id} finalizado por {tech_name}. Obrigado por escolher a PoliPrint!",
+      "supply_order": "Pedido de Suprimento #{order_id} registrado! Itens: {items_summary}. Status: {status}."
+    },
+    "ui_triggers": "Distinctive WhatsApp Green (#10B981) button with official icon, instant message composer preview modal, and automated dispatch via backend API (Twilio)."
+  },
+  "image_urls": {
+    "technician_repair_1": "https://images.pexels.com/photos/32588544/pexels-photo-32588544.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "printer_maintenance_2": "https://images.pexels.com/photos/12437643/pexels-photo-12437643.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "instructions_to_main_agent": [
+    "Ensure all components use .js / .jsx file extensions (React JavaScript).",
+    "Maintain the dark navy (#000B2E) backdrop with cyan (#12BAFF) accents across all role dashboards.",
+    "Include high-contrast data-testid attributes on all buttons, inputs, tabs, cards, and interactive elements.",
+    "Implement real-time action flows: open tickets, assume tickets, finish tickets, clock in/out, order supplies, WhatsApp messaging.",
+    "Ensure zero transparent dropdown backgrounds; popovers and selects must have solid bg-[#11183C] surfaces.",
+    "For WhatsApp integrations, combine automatic backend triggers with direct wa.me fallback buttons on ticket cards."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": {
+    "data_testid_rule": "MUST add data-testid on every button, input, tab, card, badge, modal, and key text element.",
+    "color_discipline": "Never use pure white background or generic blue (#0284c7). Stick to the NavyStack hierarchy (#000B2E, #11183C, #12BAFF).",
+    "interactivity": "All list items must have hover scale effects, glow borders on focus, and explicit active visual states."
+  }
+}

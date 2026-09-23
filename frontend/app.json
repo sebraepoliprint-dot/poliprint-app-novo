@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "PoliPrint",
+    "slug": "poliprint",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "scheme": "poliprint",
+    "backgroundColor": "#000B2E",
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "package": "com.poliprint.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": null
+    }
+  }
+}
