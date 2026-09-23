@@ -21,14 +21,14 @@ dnspython==2.8.0
 ecdsa==0.19.2
 email-validator==2.3.0
 execnet==2.1.2
-fastapi==0.110.1
+fastapi
 fastuuid==0.14.0
 filelock==4.0.1
 flake8==7.3.0
 frozenlist==1.8.0
 fsspec==2026.9.0
 google-ai-generativelanguage==0.6.15
-google-api-core==2.33.0
+google-api-core
 google-api-python-client==2.200.0
 google-auth==2.58.0
 google-auth-httplib2==0.4.2
@@ -41,7 +41,7 @@ h11==0.16.0
 hf-xet==1.6.0
 httpcore==1.0.9
 httplib2==0.32.0
-httpx==0.28.1
+httpx
 huggingface_hub==1.32.0
 idna==3.20
 importlib_metadata==9.0.1
