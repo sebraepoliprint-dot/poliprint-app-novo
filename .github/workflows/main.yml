@@ -1,0 +1,38 @@
+name: Gerar APK Gratis
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Descarregar codigo
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: ☕ Configurar Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: 📦 Instalar pacotes
+        run: npm install --legacy-peer-deps
+
+      - name: 🏗️ Preparar Android (Expo)
+        run: npx expo prebuild --platform android
+
+      - name: 🚀 Compilar APK
+        working-directory: android
+        run: bash ./gradlew assembleRelease
+
+      - name: 💾 Guardar APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Meu-Aplicativo-APK
+          path: android/app/build/outputs/apk/**/*.apk
