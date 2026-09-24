@@ -1,7 +1,7 @@
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const BASE = "[https://poliprint-app-novo.onrender.com](https://poliprint-app-novo.onrender.com)";
+const BASE = "https://poliprint-app-novo.onrender.com";
 export const API = BASE + "/api";
 
 const client = axios.create({ baseURL: API });
