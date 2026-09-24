@@ -26,17 +26,17 @@ export const Screen = ({ children, scroll = true, contentStyle }) => {
 };
 
 export const TopBar = ({ title, onBack, right }) => (
-  <View style={s.topbar}>
+  <View style={[s.topbar, { paddingTop: 45 }]}>
     {onBack ? (
-      <Pressable onPress={onBack} style={s.backBtn} data-testid="back-button">
-        <Ionicons name="chevron-back" size={22} color={C.cyan} />
-        <Text style={s.backTxt}>Voltar</Text>
+      <Pressable onPress={onBack} style={[s.backBtn, { padding: 15, width: 80, justifyContent: 'flex-start' }]}>
+        <Ionicons name="arrow-back" size={30} color="white" />
       </Pressable>
     ) : <View style={{ width: 80 }} />}
     <Text style={s.topTitle} numberOfLines={1}>{title}</Text>
     <View style={{ width: 80, alignItems: 'flex-end' }}>{right}</View>
   </View>
 );
+
 
 export const Card = ({ children, style, glow, onPress, testID }) => {
   const Comp = onPress ? Pressable : View;
